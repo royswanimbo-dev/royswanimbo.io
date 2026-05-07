@@ -355,6 +355,7 @@ a { text-decoration:none; color:inherit; }
   position:relative;
   overflow:hidden;
   display:flex;
+  overflow-x: clip; /* Mencegah elemen dekorasi menyebabkan scroll horizontal */
   align-items:center;
 }
 .hero-grid {
@@ -380,10 +381,12 @@ a { text-decoration:none; color:inherit; }
 }
 .hero-title {
   font-size: clamp(2.5rem,6vw,5rem);
+  font-size: clamp(2.2rem,6vw,5rem);
   font-weight:900;
   line-height:1.05;
   color: var(--text);
   margin:1rem 0;
+  word-wrap: break-word;
 }
 .typing-wrap { min-height:3rem; margin:.5rem 0 1rem; }
 .typing-text {
@@ -442,6 +445,8 @@ a { text-decoration:none; color:inherit; }
   position:absolute;
   width:calc(100% + 40px);
   height:calc(100% + 40px);
+  width:calc(100% + 15px);
+  height:calc(100% + 15px);
   border-radius:50%;
   border: 2px solid rgba(99,102,241,.15);
   animation: pulse 3s ease-in-out infinite;
@@ -747,9 +752,12 @@ footer {
   .hero-section { text-align:center; }
   .hero-desc { margin-inline:auto; }
   .hero-stats { justify-content:center; }
+  .hero-stats { justify-content:center; margin-inline:auto; }
   .hero-img { margin-top:2.5rem; }
   .float-chip.top { top:-3%; left:5%; }
   .float-chip.bot { bottom:-5%; right:5%; }
+  .float-chip.top { top:-3%; left:50%; transform: translateX(-50%); right: auto; width: max-content; }
+  .float-chip.bot { bottom:-5%; left:50%; transform: translateX(-50%); right: auto; width: max-content; }
   .timeline-line { display:none; }
 }
 @media(max-width:575px) {
@@ -758,6 +766,10 @@ footer {
   .rn-tabs { flex-direction:column; }
   .rn-tab-btn { width:100%; text-align:center; }
   .float-chip { font-size:.7rem; padding:.55rem .9rem; }
+  /* Penyesuaian lebih lanjut untuk float-chip pada layar sangat kecil */
+  .float-chip.top { top: -10px; font-size: .65rem; padding: .4rem .8rem; }
+  .float-chip.bot { bottom: -10px; font-size: .65rem; padding: .4rem .8rem; }
+  .hero-img-wrap { max-width: 100%; } /* Memastikan container gambar tidak melebihi lebar viewport */
 }
 </style>
 </head>
