@@ -181,6 +181,7 @@
    ============================================================ */
 *,*::before,*::after { box-sizing: border-box; margin:0; padding:0; }
 html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
 body {
   font-family: 'Outfit', sans-serif;
   background: var(--bg);
@@ -188,6 +189,8 @@ body {
   overflow-x: hidden;
   overflow-x: hidden; /* Mencegah seluruh halaman bergeser ke samping */
     width: 100%;
+  overflow-x: hidden; /* Mutlak mencegah geser kanan-kiri */
+  width: 100%;
   transition: background .35s, color .35s;
 }
 img,svg,video { max-width:100%; height:auto; }
@@ -349,6 +352,7 @@ a { text-decoration:none; color:inherit; }
    ============================================================ */
 .hero-section {
   min-height: 100vh;
+  min-height: 100dvh; /* Menggunakan Dynamic Viewport Height agar pas di layar HP */
   padding-top: 90px;
   background:
     radial-gradient(circle at 15% 30%, rgba(99,102,241,.25) 0%, transparent 45%),
@@ -356,8 +360,10 @@ a { text-decoration:none; color:inherit; }
     linear-gradient(135deg, var(--bg) 0%, var(--bg2) 50%, var(--bg) 100%);
   position:relative;
   overflow:hidden;
+  overflow: hidden;
   display:flex;
   overflow-x: clip; /* Mencegah elemen dekorasi menyebabkan scroll horizontal */
+  overflow-x: hidden; 
   align-items:center;
 }
 .hero-grid {
@@ -422,6 +428,7 @@ a { text-decoration:none; color:inherit; }
   padding:1.2rem 1.6rem;
   min-width:140px;
   transition:.35s;
+  flex: 1 1 140px; /* Membuat stat card lebih fleksibel di mobile */
 }
 .stat-card:hover { transform:translateY(-6px); border-color:var(--primary); }
 .stat-card h3 { font-size:2rem; font-weight:900; color:var(--text); }
@@ -433,6 +440,7 @@ a { text-decoration:none; color:inherit; }
   display:inline-flex;
   align-items:center;
   justify-content:center;
+  max-width: 100%;
 }
 .hero-img {
   width: clamp(260px,32vw,420px);
@@ -451,6 +459,8 @@ a { text-decoration:none; color:inherit; }
   height:calc(100% + 40px);
   width:calc(100% + 15px);
   height:calc(100% + 15px);
+  width: 105%;
+  height: 105%;
   border-radius:50%;
   border: 2px solid rgba(99,102,241,.15);
   animation: pulse 3s ease-in-out infinite;
@@ -469,9 +479,12 @@ a { text-decoration:none; color:inherit; }
   box-shadow: 0 10px 30px var(--shadow);
   z-index:5;
   animation: floatChip 3s ease-in-out infinite;
+  pointer-events: none; /* Agar tidak mengganggu interaksi sentuhan */
 }
 .float-chip.top { top:10%; left:-15%; }
 .float-chip.bot { bottom:10%; right:-12%; animation-delay:.8s; }
+.float-chip.top { top:10%; left: 0; }
+.float-chip.bot { bottom:10%; right: 0; animation-delay:.8s; }
 @keyframes floatChip { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
 
 /* ============================================================
@@ -757,6 +770,9 @@ footer {
   .hero-section { 
     text-align:center; 
     overflow-x: hidden; /* Pastikan tidak ada bocor ke samping */
+    min-height: auto; /* Biarkan konten menentukan tinggi jika di HP */
+    padding-top: 110px;
+    padding-bottom: 50px;
   }
   .hero-desc { margin-inline:auto; }
   .hero-stats { justify-content:center; }
@@ -778,6 +794,9 @@ footer {
     right: 10%; /* Ubah dari negatif ke positif */
     transform: none;
   }
+  /* Posisikan chip lebih aman di tengah agar tidak membuat layar melebar */
+  .float-chip.top { top: 0; left: 50%; transform: translateX(-50%) !important; }
+  .float-chip.bot { bottom: -15px; left: 50%; transform: translateX(-50%) !important; }
   .timeline-line { display:none; }
 }
 
@@ -785,14 +804,18 @@ footer {
   .hero-title { font-size:2.2rem; }
   .hero-title { 
     font-size: 2.2rem; 
+    font-size: clamp(2rem, 10vw, 2.8rem); 
     word-break: break-word; 
   }
+  .typing-wrap { min-height: 2.5rem; }
 
   /* Perkecil chip di HP agar pas dengan lebar layar */
   .float-chip {
     font-size: 0.65rem;
+    font-size: 0.75rem;
     padding: 0.4rem 0.8rem;
     max-width: 120px;
+    width: max-content;
     white-space: nowrap;
   }
 
@@ -807,6 +830,7 @@ footer {
   .float-chip.top { top: -10px; font-size: .65rem; padding: .4rem .8rem; }
   .float-chip.bot { bottom: -10px; font-size: .65rem; padding: .4rem .8rem; }
   .hero-img-wrap { max-width: 100%; } /* Memastikan container gambar tidak melebihi lebar viewport */
+  .hero-img { width: 250px; height: 260px; }
 }
 </style>
 </head>
