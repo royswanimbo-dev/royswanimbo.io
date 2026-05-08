@@ -186,6 +186,8 @@ body {
   background: var(--bg);
   color: var(--text);
   overflow-x: hidden;
+  overflow-x: hidden; /* Mencegah seluruh halaman bergeser ke samping */
+    width: 100%;
   transition: background .35s, color .35s;
 }
 img,svg,video { max-width:100%; height:auto; }
@@ -382,11 +384,13 @@ a { text-decoration:none; color:inherit; }
 .hero-title {
   font-size: clamp(2.5rem,6vw,5rem);
   font-size: clamp(2.2rem,6vw,5rem);
+  font-size: clamp(2.2rem, 6vw, 5rem);
   font-weight:900;
   line-height:1.05;
   color: var(--text);
   margin:1rem 0;
   word-wrap: break-word;
+  word-break: break-word; /* Mencegah teks panjang merusak layout */
 }
 .typing-wrap { min-height:3rem; margin:.5rem 0 1rem; }
 .typing-text {
@@ -750,6 +754,10 @@ footer {
    ============================================================ */
 @media(max-width:991px) {
   .hero-section { text-align:center; }
+  .hero-section { 
+    text-align:center; 
+    overflow-x: hidden; /* Pastikan tidak ada bocor ke samping */
+  }
   .hero-desc { margin-inline:auto; }
   .hero-stats { justify-content:center; }
   .hero-stats { justify-content:center; margin-inline:auto; }
@@ -758,10 +766,39 @@ footer {
   .float-chip.bot { bottom:-5%; right:5%; }
   .float-chip.top { top:-3%; left:50%; transform: translateX(-50%); right: auto; width: max-content; }
   .float-chip.bot { bottom:-5%; left:50%; transform: translateX(-50%); right: auto; width: max-content; }
+
+  /* Menengahkan chip di mobile agar tidak keluar layar */
+  .float-chip.top { 
+    top: 5%; 
+    left: 10%; /* Ubah dari negatif ke positif */
+    transform: none;
+  }
+  .float-chip.bot { 
+    bottom: 5%; 
+    right: 10%; /* Ubah dari negatif ke positif */
+    transform: none;
+  }
   .timeline-line { display:none; }
 }
+
 @media(max-width:575px) {
   .hero-title { font-size:2.2rem; }
+  .hero-title { 
+    font-size: 2.2rem; 
+    word-break: break-word; 
+  }
+
+  /* Perkecil chip di HP agar pas dengan lebar layar */
+  .float-chip {
+    font-size: 0.65rem;
+    padding: 0.4rem 0.8rem;
+    max-width: 120px;
+    white-space: nowrap;
+  }
+
+  .float-chip.top { top: 0; left: 5%; }
+  .float-chip.bot { bottom: 0; right: 5%; }
+
   .stat-card { min-width:0; width:100%; }
   .rn-tabs { flex-direction:column; }
   .rn-tab-btn { width:100%; text-align:center; }
@@ -1643,3 +1680,4 @@ window.addEventListener('scroll', () => {
 </script>
 </body>
 </html>
+
