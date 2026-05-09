@@ -1,1707 +1,385 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="dark">
-
+<html lang="id">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roys Loader Website</title>
 
-  <!-- BASIC -->
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1, viewport-fit=cover">
-
-  <!-- SEO TITLE -->
-  <title>
-    Roys Wanimbo | Frontend Developer Papua
-  </title>
-
-  <!-- SEO META -->
-  <meta name="title"
-        content="Roys Wanimbo | Frontend Developer Papua">
-
-  <meta name="description"
-        content="Portfolio resmi Roys Wanimbo - Frontend Developer, UI Designer, dan kreator website modern dari Papua.">
-
-  <meta name="keywords"
-        content="Roys Wanimbo, Roys Papua, Frontend Developer Papua, Web Developer Papua, UI Designer Papua, Portfolio Roys Wanimbo">
-
-  <!-- AUTHOR -->
-  <meta name="author"
-        content="Roys Wanimbo">
-
-  <meta name="creator"
-        content="Roys Wanimbo">
-
-  <meta name="publisher"
-        content="Roys Wanimbo">
-
-  <!-- COPYRIGHT -->
-  <meta name="copyright"
-        content="Copyright © 2026 Roys Wanimbo. All Rights Reserved.">
-
-  <meta name="designer"
-        content="Roys Wanimbo">
-
-  <meta name="developer"
-        content="Roys Wanimbo">
-
-  <meta name="owner"
-        content="Roys Wanimbo">
-
-  <!-- GOOGLE -->
-  <meta name="robots"
-        content="index, follow">
-
-  <meta name="googlebot"
-        content="index, follow">
-
-  <meta name="language"
-        content="Indonesian">
-
-  <meta name="revisit-after"
-        content="7 days">
-
-  <!-- THEME -->
-  <meta name="theme-color"
-        content="#050816">
-
-  <!-- OPEN GRAPH -->
-  <meta property="og:type"
-        content="website">
-
-  <meta property="og:title"
-        content="Roys Wanimbo | Frontend Developer Papua">
-
-  <meta property="og:description"
-        content="Website portfolio resmi Roys Wanimbo dari Papua.">
-
-  <meta property="og:image"
-        content="https://wanimboroys35-pixel.github.io/assets/images/roys/Profile-roys.png">
-
-  <meta property="og:url"
-        content="https://wanimboroys35-pixel.github.io/">
-
-  <meta property="og:site_name"
-        content="Roys Wanimbo">
-
-  <!-- TWITTER -->
-  <meta name="twitter:card"
-        content="summary_large_image">
-
-  <meta name="twitter:title"
-        content="Roys Wanimbo | Frontend Developer Papua">
-
-  <meta name="twitter:description"
-        content="Portfolio modern Roys Wanimbo dari Papua.">
-
-  <meta name="twitter:image"
-        content="https://wanimboroys35-pixel.github.io/assets/images/roys/Profile-roys.png">
-
-  <!-- CANONICAL -->
-  <link rel="canonical"
-        href="https://wanimboroys35-pixel.github.io/">
-
-  <!-- ICON -->
-  <link rel="icon"
-        href="assets/images/roys/Profile-roys.png"
-        type="image/png">
-
-  <!-- GOOGLE SITE VERIFICATION -->
-  <meta name="google-site-verification"
-        content="ISI_KODE_GSC_KAMU">
-
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- GOOGLE FONT -->
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-  <!-- AOS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-        rel="stylesheet">
-
-  <!-- STRUCTURED DATA -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Roys Wanimbo",
-    "url":"https://wanimboroys35-pixel.github.io/",
-    "image":"https://wanimboroys35-pixel.github.io/assets/images/roys/Profile-roys.png",
-    "jobTitle":"Frontend Developer",
-    "description":"Frontend Developer dan UI Designer dari Papua",
-    "sameAs":[
-      "https://github.com/wanimboroys35-pixel"
-    ]
-  }
-  </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* ============================================================
-   CSS VARIABLES — DARK / LIGHT THEME
-   ============================================================ */
-:root {
-  --primary:        #6366f1;
-  --primary-glow:   #818cf8;
-  --accent:         #22d3ee;
-  --grad:           linear-gradient(135deg,#6366f1,#22d3ee);
-
-  /* dark defaults */
-  --bg:             #080812;
-  --bg2:            #0f0f1c;
-  --bg3:            #16162a;
-  --card:           rgba(255,255,255,0.04);
-  --card-border:    rgba(255,255,255,0.09);
-  --text:           #f1f5f9;
-  --text-muted:     #94a3b8;
-  --nav-bg:         rgba(8,8,18,0.85);
-  --footer-bg:      #04040e;
-  --shadow:         rgba(0,0,0,0.4);
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
-[data-theme="light"] {
-  --bg:             #f0f4ff;
-  --bg2:            #e8eeff;
-  --bg3:            #dde5ff;
-  --card:           rgba(255,255,255,0.75);
-  --card-border:    rgba(99,102,241,0.2);
-  --text:           #1e1b4b;
-  --text-muted:     #64748b;
-  --nav-bg:         rgba(240,244,255,0.92);
-  --footer-bg:      #dde5ff;
-  --shadow:         rgba(99,102,241,0.15);
+html,body{
+width:100%;
+height:100%;
+overflow:hidden;
+background:#020617;
 }
 
-/* ============================================================
-   BASE
-   ============================================================ */
-*,*::before,*::after { box-sizing: border-box; margin:0; padding:0; }
-html { scroll-behavior: smooth; }
-html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
-body {
-  font-family: 'Outfit', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  overflow-x: hidden;
-  overflow-x: hidden; /* Mencegah seluruh halaman bergeser ke samping */
-    width: 100%;
-  overflow-x: hidden; /* Mutlak mencegah geser kanan-kiri */
-  width: 100%;
-  transition: background .35s, color .35s;
-}
-img,svg,video { max-width:100%; height:auto; }
-a { text-decoration:none; color:inherit; }
-::-webkit-scrollbar { width:6px; }
-::-webkit-scrollbar-track { background:var(--bg); }
-::-webkit-scrollbar-thumb { background:var(--primary); border-radius:4px; }
-
-/* ============================================================
-   UTILITIES
-   ============================================================ */
-.gradient-text {
-  background: var(--grad);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-.glass {
-  background: var(--card);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--card-border);
-  border-radius: 1rem;
-}
-.glass:hover {
-  border-color: var(--primary);
-  box-shadow: 0 20px 40px var(--shadow);
-  transform: translateY(-6px);
-  transition: all .35s ease;
-}
-.section-label {
-  display: inline-block;
-  background: rgba(99,102,241,.15);
-  border: 1px solid rgba(99,102,241,.3);
-  color: var(--primary);
-  font-size:.75rem;
-  font-weight:700;
-  letter-spacing:.12em;
-  text-transform:uppercase;
-  padding:.35rem 1rem;
-  border-radius:50px;
-}
-.section-heading {
-  font-size: clamp(1.8rem,4vw,2.8rem);
-  font-weight:800;
-  color: var(--text);
-  margin:.5rem 0;
-}
-.btn-glow {
-  background: var(--grad);
-  color:#fff;
-  border:none;
-  padding:.7rem 1.8rem;
-  border-radius:50px;
-  font-weight:700;
-  transition:.3s;
-  display:inline-flex;
-  align-items:center;
-  gap:.5rem;
-}
-.btn-glow:hover {
-  transform:translateY(-3px);
-  box-shadow:0 12px 30px rgba(99,102,241,.45);
-  color:#fff;
-}
-.btn-outline-glow {
-  border: 2px solid var(--primary);
-  color: var(--primary);
-  background: transparent;
-  padding:.7rem 1.8rem;
-  border-radius:50px;
-  font-weight:700;
-  transition:.3s;
-  display:inline-flex;
-  align-items:center;
-  gap:.5rem;
-}
-.btn-outline-glow:hover {
-  background: var(--primary);
-  color:#fff;
-  transform:translateY(-3px);
+/* ======================
+   LOADER FULL SCREEN
+====================== */
+#loader{
+position:fixed;
+inset:0;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:
+radial-gradient(circle at top left,#00eaff22 0%,transparent 30%),
+radial-gradient(circle at bottom right,#7c3aed22 0%,transparent 30%),
+linear-gradient(135deg,#020617,#071429,#0b1d34,#08111f);
+color:#fff;
+z-index:99999;
+overflow:hidden;
+transition:1s ease;
 }
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
-#navbar {
-  position: fixed;
-  top:0; left:0; right:0;
-  z-index: 1000;
-  background: var(--nav-bg);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--card-border);
-  transition: background .35s, border .35s;
-}
-.navbar-brand-name {
-  font-size:1.15rem;
-  font-weight:900;
-  color: var(--text);
-}
-.nav-link {
-  color: var(--text-muted) !important;
-  font-weight:600;
-  font-size:.9rem;
-  padding:.45rem .9rem !important;
-  border-radius:.5rem;
-  transition:.25s;
-  position:relative;
-}
-.nav-link:hover, .nav-link.active {
-  color: var(--primary) !important;
-  background: rgba(99,102,241,.1);
-}
-#navbarMenu {
-  z-index:1040;
-}
-#navbarMenu.show {
-  background: var(--nav-bg);
-  backdrop-filter:blur(20px);
-  border-radius:1rem;
-  padding:1rem;
-  margin-top:.75rem;
-}
-/* Theme Toggle */
-.theme-toggle {
-  width:42px; height:42px;
-  display:flex; align-items:center; justify-content:center;
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius:50%;
-  cursor:pointer;
-  transition:.3s;
-  font-size:1.1rem;
-  color: var(--text);
-  flex-shrink:0;
-}
-.theme-toggle:hover {
-  background: rgba(99,102,241,.15);
-  border-color: var(--primary);
-}
-/* WA Button */
-.btn-wa {
-  background: linear-gradient(135deg,#25D366,#128C7E);
-  color:#fff;
-  padding:.5rem 1.2rem;
-  border-radius:50px;
-  font-weight:700;
-  font-size:.85rem;
-  transition:.3s;
-  display:inline-flex;
-  align-items:center;
-  gap:.4rem;
-}
-.btn-wa:hover { transform:translateY(-2px); box-shadow:0 8px 20px rgba(37,211,102,.4); color:#fff; }
-
-/* ============================================================
-   HERO
-   ============================================================ */
-.hero-section {
-  min-height: 100vh;
-  min-height: 100dvh; /* Menggunakan Dynamic Viewport Height agar pas di layar HP */
-  padding-top: 90px;
-  background:
-    radial-gradient(circle at 15% 30%, rgba(99,102,241,.25) 0%, transparent 45%),
-    radial-gradient(circle at 85% 70%, rgba(34,211,238,.2) 0%, transparent 45%),
-    linear-gradient(135deg, var(--bg) 0%, var(--bg2) 50%, var(--bg) 100%);
-  position:relative;
-  overflow:hidden;
-  overflow: hidden;
-  display:flex;
-  overflow-x: clip; /* Mencegah elemen dekorasi menyebabkan scroll horizontal */
-  overflow-x: hidden; 
-  align-items:center;
-}
-.hero-grid {
-  position:absolute; inset:0;
-  background-image:
-    linear-gradient(rgba(99,102,241,.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(99,102,241,.04) 1px, transparent 1px);
-  background-size: 55px 55px;
-  pointer-events:none;
-}
-.hero-badge {
-  display:inline-flex;
-  align-items:center;
-  gap:.6rem;
-  background: rgba(99,102,241,.12);
-  border: 1px solid rgba(99,102,241,.3);
-  color: var(--primary-glow);
-  font-size:.8rem;
-  font-weight:700;
-  padding:.5rem 1.2rem;
-  border-radius:50px;
-  letter-spacing:.05em;
-}
-.hero-title {
-  font-size: clamp(2.5rem,6vw,5rem);
-  font-size: clamp(2.2rem,6vw,5rem);
-  font-size: clamp(2.2rem, 6vw, 5rem);
-  font-weight:900;
-  line-height:1.05;
-  color: var(--text);
-  margin:1rem 0;
-  word-wrap: break-word;
-  word-break: break-word; /* Mencegah teks panjang merusak layout */
-}
-.typing-wrap { min-height:3rem; margin:.5rem 0 1rem; }
-.typing-text {
-  font-size: clamp(1rem,2.2vw,1.6rem);
-  font-weight:700;
-  color: var(--accent);
-  border-right: 3px solid var(--accent);
-  padding-right:.4rem;
-  display:inline-block;
-}
-.hero-desc {
-  color: var(--text-muted);
-  font-size:clamp(.9rem,1.5vw,1.05rem);
-  line-height:1.85;
-  max-width:540px;
-  margin-bottom:1.5rem;
-}
-.hero-stats {
-  display:flex;
-  gap:1rem;
-  flex-wrap:wrap;
-  margin-top:1.5rem;
-}
-.stat-card {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  backdrop-filter:blur(15px);
-  border-radius:1.2rem;
-  padding:1.2rem 1.6rem;
-  min-width:140px;
-  transition:.35s;
-  flex: 1 1 140px; /* Membuat stat card lebih fleksibel di mobile */
-}
-.stat-card:hover { transform:translateY(-6px); border-color:var(--primary); }
-.stat-card h3 { font-size:2rem; font-weight:900; color:var(--text); }
-.stat-card span { font-size:.8rem; color:var(--text-muted); font-weight:600; }
-
-/* Hero image */
-.hero-img-wrap {
-  position:relative;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  max-width: 100%;
-}
-.hero-img {
-  width: clamp(260px,32vw,420px);
-  height: clamp(260px,32vw,420px);
-  object-fit:cover;
-  border-radius:50%;
-  border: 4px solid rgba(99,102,241,.4);
-  box-shadow: 0 0 60px rgba(99,102,241,.3), 0 0 120px rgba(34,211,238,.15);
-  animation: floatImg 4s ease-in-out infinite;
-  position:relative; z-index:3;
-}
-@keyframes floatImg { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-16px);} }
-.hero-glow-ring {
-  position:absolute;
-  width:calc(100% + 40px);
-  height:calc(100% + 40px);
-  width:calc(100% + 15px);
-  height:calc(100% + 15px);
-  width: 105%;
-  height: 105%;
-  border-radius:50%;
-  border: 2px solid rgba(99,102,241,.15);
-  animation: pulse 3s ease-in-out infinite;
-}
-@keyframes pulse { 0%,100%{opacity:.4;transform:scale(1);} 50%{opacity:1;transform:scale(1.04);} }
-.float-chip {
-  position:absolute;
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  backdrop-filter:blur(16px);
-  color: var(--text);
-  padding:.75rem 1.2rem;
-  border-radius:1rem;
-  font-weight:700;
-  font-size:.8rem;
-  box-shadow: 0 10px 30px var(--shadow);
-  z-index:5;
-  animation: floatChip 3s ease-in-out infinite;
-  pointer-events: none; /* Agar tidak mengganggu interaksi sentuhan */
-}
-.float-chip.top { top:10%; left:-15%; }
-.float-chip.bot { bottom:10%; right:-12%; animation-delay:.8s; }
-.float-chip.top { top:10%; left: 0; }
-.float-chip.bot { bottom:10%; right: 0; animation-delay:.8s; }
-@keyframes floatChip { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
-
-/* ============================================================
-   TECH STACK STRIP
-   ============================================================ */
-.tech-strip {
-  background: var(--bg2);
-  border-top: 1px solid var(--card-border);
-  border-bottom: 1px solid var(--card-border);
-  padding: 2rem 0;
-}
-.tech-item {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:.5rem;
-  cursor:default;
-  transition:.3s;
-}
-.tech-item i {
-  font-size:2.2rem;
-  color: var(--text-muted);
-  transition:.3s;
-}
-.tech-item:hover i { color:var(--primary); transform:scale(1.2) rotate(5deg); }
-.tech-item span { font-size:.7rem; font-weight:700; color:var(--text-muted); letter-spacing:.08em; text-transform:uppercase; }
-
-/* ============================================================
-   EXPERIENCE / KOMUNITAS
-   ============================================================ */
-.exp-section { background:var(--bg); }
-.exp-card {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  backdrop-filter:blur(20px);
-  border-radius:1.5rem;
-  padding:2rem;
-  transition:.4s;
-  position:relative;
-  overflow:hidden;
-  height:100%;
-}
-.exp-card::before {
-  content:'';
-  position:absolute;
-  top:-80px; right:-80px;
-  width:180px; height:180px;
-  border-radius:50%;
-  filter:blur(80px);
-  opacity:.25;
-  pointer-events:none;
-}
-.exp-card.blue::before { background:#2563eb; }
-.exp-card.cyan::before { background:#06b6d4; }
-.exp-card:hover { transform:translateY(-10px); border-color:rgba(99,102,241,.5); box-shadow:0 30px 60px var(--shadow); }
-.exp-logo {
-  width:54px; height:54px;
-  background:rgba(99,102,241,.12);
-  border-radius:1rem;
-  display:flex; align-items:center; justify-content:center;
-  flex-shrink:0;
-}
-.exp-logo img { width:38px; }
-.exp-img {
-  width:100%; height:220px;
-  object-fit:cover;
-  border-radius:1rem;
-  transition:.4s;
-}
-.exp-card:hover .exp-img { transform:scale(1.03); }
-.cert-wrap { position:relative; border-radius:1rem; overflow:hidden; }
-.cert-overlay {
-  position:absolute; inset:0;
-  background:rgba(0,0,0,.55);
-  display:flex; align-items:center; justify-content:center;
-  opacity:0; transition:.35s;
-}
-.cert-wrap:hover .cert-overlay { opacity:1; }
-
-/* ============================================================
-   PROJECTS
-   ============================================================ */
-.projects-section { background:var(--bg2); }
-.proj-card {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius:1.2rem;
-  overflow:hidden;
-  transition:.4s;
-}
-.proj-card:hover { transform:translateY(-10px) scale(1.02); border-color:var(--primary); box-shadow:0 25px 50px var(--shadow); }
-.proj-card img { transition:.5s; }
-.proj-card:hover img { transform:scale(1.1); }
-.proj-badge {
-  background: var(--grad);
-  color:#fff;
-  font-size:.7rem;
-  font-weight:700;
-  padding:.2rem .65rem;
-  border-radius:50px;
+/* grid */
+.grid{
+position:absolute;
+inset:0;
+background:
+linear-gradient(#00ffff10 1px,transparent 1px),
+linear-gradient(90deg,#00ffff10 1px,transparent 1px);
+background-size:40px 40px;
+transform:perspective(800px) rotateX(70deg) scale(1.8);
+transform-origin:bottom;
+animation:gridMove 10s linear infinite;
+opacity:.4;
 }
 
-/* ============================================================
-   RIWAYAT / TIMELINE
-   ============================================================ */
-.timeline-section { background:var(--bg); }
-.rn-tabs {
-  display:flex; gap:.75rem; flex-wrap:wrap;
-}
-.rn-tab-btn {
-  border:1px solid var(--card-border);
-  background: var(--card);
-  color: var(--text-muted);
-  padding:.6rem 1.4rem;
-  border-radius:50px;
-  font-weight:700;
-  font-size:.88rem;
-  cursor:pointer;
-  transition:.3s;
-}
-.rn-tab-btn.active {
-  background: var(--grad);
-  color:#fff;
-  border-color:transparent;
-  box-shadow:0 8px 25px rgba(99,102,241,.35);
-}
-.rn-tab-pane { display:none; }
-.rn-tab-pane.active { display:block; animation:fadeInTab .4s ease; }
-@keyframes fadeInTab { from{opacity:0;transform:translateY(12px);} to{opacity:1;transform:translateY(0);} }
-.timeline-line {
-  position:absolute;
-  left:50%; top:0; bottom:0;
-  width:2px;
-  background: linear-gradient(to bottom,var(--primary),var(--accent));
-  transform:translateX(-50%);
-}
-.tl-dot {
-  width:56px; height:56px;
-  background: var(--grad);
-  border-radius:50%;
-  display:flex; align-items:center; justify-content:center;
-  box-shadow:0 0 25px rgba(99,102,241,.5);
-  flex-shrink:0;
-}
-.resume-item {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius:1rem;
-  padding:1.5rem;
-  margin-bottom:1.2rem;
-  transition:.3s;
-}
-.resume-item:hover { border-color:var(--primary); transform:translateX(4px); }
-.resume-date {
-  background: rgba(99,102,241,.15);
-  color: var(--primary);
-  font-size:.75rem;
-  font-weight:700;
-  padding:.25rem .75rem;
-  border-radius:50px;
-  display:inline-block;
-  margin-bottom:.5rem;
+@keyframes gridMove{
+100%{background-position:0 40px,40px 0;}
 }
 
-/* Progress Bars */
-.skill-label { display:flex; justify-content:space-between; margin-bottom:.35rem; }
-.skill-label span { font-size:.85rem; font-weight:600; color:var(--text); }
-.skill-label .pct { color:var(--primary); }
-.progress { height:10px; background:rgba(99,102,241,.12); border-radius:10px; overflow:hidden; }
-.progress-bar {
-  border-radius:10px;
-  background: var(--grad);
-  box-shadow:0 0 10px rgba(99,102,241,.4);
-  width:0;
-  transition:width 1.5s cubic-bezier(.4,0,.2,1);
+/* particles */
+.particle{
+position:absolute;
+width:4px;
+height:4px;
+border-radius:50%;
+background:#00ffff;
+box-shadow:0 0 12px #00ffff;
+animation:float 8s linear infinite;
 }
 
-/* ============================================================
-   KEAHLIAN
-   ============================================================ */
-.skills-section { background:var(--bg2); }
-.skill-card {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius:1.2rem;
-  padding:1.8rem;
-  text-align:center;
-  transition:.4s;
-}
-.skill-card:hover { transform:translateY(-8px); border-color:var(--primary); box-shadow:0 20px 40px var(--shadow); }
-.skill-card i { font-size:2.5rem; margin-bottom:1rem; transition:.3s; }
-.skill-card:hover i { transform:scale(1.2) rotate(8deg); filter:drop-shadow(0 0 8px currentColor); }
-.skill-pills .nav-link {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  color: var(--text-muted) !important;
-  border-radius:50px;
-  padding:.55rem 1.4rem;
-  font-weight:700;
-  transition:.3s;
-  margin:.25rem;
-}
-.skill-pills .nav-link:hover { border-color:var(--primary); color:var(--primary) !important; }
-.skill-pills .nav-link.active {
-  background: var(--grad) !important;
-  color:#fff !important;
-  border-color:transparent;
-  box-shadow:0 8px 25px rgba(99,102,241,.3);
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-20vh);}
 }
 
-/* ============================================================
-   ARTIKEL
-   ============================================================ */
-.artikel-section { background:var(--bg); }
-.art-card {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius:1.2rem;
-  overflow:hidden;
-  transition:.4s;
-  height:100%;
-}
-.art-card:hover { transform:translateY(-8px); border-color:var(--primary); box-shadow:0 20px 40px var(--shadow); }
-.art-card img { height:200px; width:100%; object-fit:cover; transition:.5s; }
-.art-card:hover img { transform:scale(1.07); }
-
-/* ============================================================
-   FOOTER
-   ============================================================ */
-footer {
-  background: var(--footer-bg);
-  border-top: 1px solid var(--card-border);
-  padding:3rem 0 2rem;
-}
-.footer-social a {
-  width:40px; height:40px;
-  display:inline-flex; align-items:center; justify-content:center;
-  border-radius:50%;
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  color: var(--text-muted);
-  transition:.3s;
-}
-.footer-social a:hover { color:var(--primary); border-color:var(--primary); transform:translateY(-4px); box-shadow:0 8px 20px rgba(99,102,241,.3); }
-
-/* ============================================================
-   SCROLL TOP
-   ============================================================ */
-#scrollTop {
-  position:fixed;
-  bottom:1.5rem; right:1.5rem;
-  z-index:999;
-  width:44px; height:44px;
-  background: var(--grad);
-  color:#fff;
-  border:none;
-  border-radius:50%;
-  display:flex; align-items:center; justify-content:center;
-  font-size:1rem;
-  cursor:pointer;
-  opacity:0; pointer-events:none;
-  transition:.35s;
-  box-shadow:0 8px 25px rgba(99,102,241,.4);
-}
-#scrollTop.visible { opacity:1; pointer-events:all; }
-#scrollTop:hover { transform:translateY(-4px); }
-
-/* ============================================================
-   MODAL ARTICLE
-   ============================================================ */
-.modal-content {
-  background: var(--bg2);
-  border: 1px solid var(--card-border);
-  color: var(--text);
-}
-.modal-body p, .modal-body { color: var(--text-muted); line-height:1.85; }
-
-/* ============================================================
-   MOBILE RESPONSIVE
-   ============================================================ */
-@media(max-width:991px) {
-  .hero-section { text-align:center; }
-  .hero-section { 
-    text-align:center; 
-    overflow-x: hidden; /* Pastikan tidak ada bocor ke samping */
-    min-height: auto; /* Biarkan konten menentukan tinggi jika di HP */
-    padding-top: 110px;
-    padding-bottom: 50px;
-  }
-  .hero-desc { margin-inline:auto; }
-  .hero-stats { justify-content:center; }
-  .hero-stats { justify-content:center; margin-inline:auto; }
-  .hero-img { margin-top:2.5rem; }
-  .float-chip.top { top:-3%; left:5%; }
-  .float-chip.bot { bottom:-5%; right:5%; }
-  .float-chip.top { top:-3%; left:50%; transform: translateX(-50%); right: auto; width: max-content; }
-  .float-chip.bot { bottom:-5%; left:50%; transform: translateX(-50%); right: auto; width: max-content; }
-
-  /* Menengahkan chip di mobile agar tidak keluar layar */
-  .float-chip.top { 
-    top: 5%; 
-    left: 10%; /* Ubah dari negatif ke positif */
-    transform: none;
-  }
-  .float-chip.bot { 
-    bottom: 5%; 
-    right: 10%; /* Ubah dari negatif ke positif */
-    transform: none;
-  }
-  /* Posisikan chip lebih aman di tengah agar tidak membuat layar melebar */
-  .float-chip.top { top: 0; left: 50%; transform: translateX(-50%) !important; }
-  .float-chip.bot { bottom: -15px; left: 50%; transform: translateX(-50%) !important; }
-  .timeline-line { display:none; }
+/* profile image */
+.profile-wrap{
+position:relative;
+width:150px;
+height:150px;
+border-radius:50%;
+padding:5px;
+background:linear-gradient(45deg,#00ffff,#8b5cf6,#22c55e,#00ffff);
+background-size:300% 300%;
+animation:borderGlow 4s linear infinite;
+box-shadow:0 0 25px #00ffff88;
+z-index:10;
 }
 
-@media(max-width:575px) {
-  .hero-title { font-size:2.2rem; }
-  .hero-title { 
-    font-size: 2.2rem; 
-    font-size: clamp(2rem, 10vw, 2.8rem); 
-    word-break: break-word; 
-  }
-  .typing-wrap { min-height: 2.5rem; }
+@keyframes borderGlow{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
 
-  /* Perkecil chip di HP agar pas dengan lebar layar */
-  .float-chip {
-    font-size: 0.65rem;
-    font-size: 0.75rem;
-    padding: 0.4rem 0.8rem;
-    max-width: 120px;
-    width: max-content;
-    white-space: nowrap;
-  }
+.profile{
+width:100%;
+height:100%;
+border-radius:50%;
+overflow:hidden;
+border:4px solid rgba(255,255,255,.08);
+background:#111827;
+}
 
-  .float-chip.top { top: 0; left: 5%; }
-  .float-chip.bot { bottom: 0; right: 5%; }
+.profile img{
+width:100%;
+height:100%;
+object-fit:cover;
+animation:zoomPhoto 4s ease-in-out infinite;
+}
 
-  .stat-card { min-width:0; width:100%; }
-  .rn-tabs { flex-direction:column; }
-  .rn-tab-btn { width:100%; text-align:center; }
-  .float-chip { font-size:.7rem; padding:.55rem .9rem; }
-  /* Penyesuaian lebih lanjut untuk float-chip pada layar sangat kecil */
-  .float-chip.top { top: -10px; font-size: .65rem; padding: .4rem .8rem; }
-  .float-chip.bot { bottom: -10px; font-size: .65rem; padding: .4rem .8rem; }
-  .hero-img-wrap { max-width: 100%; } /* Memastikan container gambar tidak melebihi lebar viewport */
-  .hero-img { width: 250px; height: 260px; }
+@keyframes zoomPhoto{
+0%,100%{transform:scale(1);}
+50%{transform:scale(1.08);}
+}
+
+/* orbit ring */
+.orbit{
+position:absolute;
+width:190px;
+height:190px;
+border:1px dashed #00ffff55;
+border-radius:50%;
+animation:spin 8s linear infinite;
+z-index:2;
+}
+
+.orbit::before{
+content:"";
+position:absolute;
+top:-6px;
+left:50%;
+transform:translateX(-50%);
+width:12px;
+height:12px;
+border-radius:50%;
+background:#00ffff;
+box-shadow:0 0 12px #00ffff;
+}
+
+@keyframes spin{
+100%{transform:rotate(360deg);}
+}
+
+/* core icon */
+.core{
+margin-top:20px;
+width:85px;
+height:85px;
+border-radius:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(12px);
+box-shadow:0 0 25px #00ffff66;
+animation:pulse 2s infinite;
+cursor:pointer;
+z-index:10;
+}
+
+.core i{
+font-size:38px;
+color:#00ffff;
+}
+
+@keyframes pulse{
+0%,100%{transform:scale(1);}
+50%{transform:scale(1.08);}
+}
+
+/* text */
+h1{
+margin-top:20px;
+font-size:34px;
+letter-spacing:2px;
+text-shadow:0 0 15px #00ffff;
+z-index:10;
+}
+
+.sub{
+margin-top:8px;
+font-size:14px;
+letter-spacing:4px;
+text-transform:uppercase;
+color:#d6faff;
+z-index:10;
+}
+
+/* progress */
+.progress-wrap{
+margin-top:24px;
+width:360px;
+max-width:90%;
+height:12px;
+background:#ffffff12;
+border-radius:40px;
+overflow:hidden;
+z-index:10;
+}
+
+.progress{
+height:100%;
+width:0%;
+border-radius:40px;
+background:linear-gradient(90deg,#00ffff,#22c55e,#8b5cf6);
+animation:load 6s linear forwards;
+}
+
+@keyframes load{
+100%{width:100%;}
+}
+
+.row{
+margin-top:12px;
+display:flex;
+gap:18px;
+z-index:10;
+}
+
+.percent{
+font-size:20px;
+font-weight:bold;
+color:#00ffff;
+}
+
+.status{
+font-size:14px;
+color:#e8f6ff;
+}
+
+/* cards */
+.stats{
+margin-top:22px;
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+justify-content:center;
+z-index:10;
+}
+
+.card{
+padding:12px 16px;
+border-radius:16px;
+background:rgba(255,255,255,.06);
+min-width:120px;
+text-align:center;
+}
+
+.card b{
+display:block;
+font-size:18px;
+color:#00ffff;
+margin-bottom:5px;
+}
+
+/* mobile */
+@media(max-width:768px){
+.profile-wrap{width:120px;height:120px;}
+.orbit{width:155px;height:155px;}
+h1{font-size:24px;}
+.progress-wrap{width:280px;}
+.row{flex-direction:column;gap:5px;}
 }
 </style>
 </head>
 <body>
 
-<!-- ============================================================
-     NAVBAR
-     ============================================================ -->
-<header id="navbar">
-  <nav class="navbar navbar-expand-lg py-2">
-    <div class="container-xl">
-      <!-- Brand -->
-      <a href="#" class="navbar-brand d-flex align-items-center gap-2 text-decoration-none">
-        <img src="assets/images/roys/Profile-roys.png" alt="R" width="32" height="32" style="border-radius:50%;object-fit:cover;">
-        <span class="navbar-brand-name">ROYS <span class="gradient-text">WANIMBO</span></span>
-      </a>
+<div id="loader">
 
-      <div class="d-flex align-items-center gap-2 d-lg-none">
-        <!-- Theme toggle mobile -->
-        <div class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme">
-          <i class="fas fa-moon" id="themeIconMobile"></i>
-        </div>
-        <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-expanded="false">
-          <i class="fas fa-bars fs-5" style="color:var(--text);"></i>
-        </button>
-      </div>
+<div class="grid"></div>
 
-      <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-1">
-          <li class="nav-item"><a class="nav-link" href="#beranda"><i class="fas fa-home me-1"></i>Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="#pengalaman"><i class="fas fa-users me-1"></i>Pengalaman</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projek"><i class="fas fa-folder-open me-1"></i>Projek</a></li>
-          <li class="nav-item"><a class="nav-link" href="#riwayat"><i class="fas fa-scroll me-1"></i>Riwayat Hidup</a></li>
-          <li class="nav-item"><a class="nav-link" href="#keahlian"><i class="fas fa-chart-line me-1"></i>Keahlian</a></li>
-          <li class="nav-item"><a class="nav-link" href="#artikel"><i class="fas fa-file-alt me-1"></i>Artikel</a></li>
-          <li class="nav-item d-lg-none mt-2">
-            <a class="btn-wa d-inline-flex" href="https://wa.me/6282198924636?text=Hello%20Kaka%20Roys!" target="_blank" rel="noopener">
-              <i class="fab fa-whatsapp"></i> WhatsApp Me
-            </a>
-          </li>
-        </ul>
-        <div class="d-none d-lg-flex align-items-center gap-2 ms-3">
-          <div class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-            <i class="fas fa-moon" id="themeIcon"></i>
-          </div>
-          <a class="btn-wa" href="https://wa.me/6282198924636?text=Hello%20Kaka%20Roys%20saya%20tertarik%20sekali%20punya%20portopolio%20begini%20kaka!" target="_blank" rel="noopener">
-            <i class="fab fa-whatsapp"></i> WhatsApp Me
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
-</header>
+<div class="particle" style="left:10%;animation-duration:8s;"></div>
+<div class="particle" style="left:22%;animation-duration:10s;"></div>
+<div class="particle" style="left:40%;animation-duration:7s;"></div>
+<div class="particle" style="left:60%;animation-duration:9s;"></div>
+<div class="particle" style="left:82%;animation-duration:6s;"></div>
 
-<!-- ============================================================
-     HERO
-     ============================================================ -->
-<section class="hero-section" id="beranda">
-  <div class="hero-grid"></div>
-  <div class="container position-relative" style="z-index:2;">
-    <div class="row align-items-center g-5 py-5">
-      <!-- Left -->
-      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
-        <div class="hero-badge mb-3">
-          <i class="fas fa-rocket"></i> PORTFOLIO MODERN 2026
-        </div>
-        <h1 class="hero-title">
-          Hi, I'm<br>
-          <span class="gradient-text">Roys Wanimbo</span>
-        </h1>
-        <div class="typing-wrap">
-          <span class="typing-text" id="typingEl"></span>
-        </div>
-        <p class="hero-desc">
-          Halo, Saya Roys! Saya mahasiswa Informatika di Uningrat Papua, fokus belajar web programming. Saat ini saya aktif di komunitas SaCode yang metode belajarnya sangat mudah dipahami.
-        </p>
-        <div class="d-flex flex-wrap gap-3">
-          <a href="#projek" class="btn-glow"><i class="fas fa-rocket"></i> Lihat Project</a>
-          <a href="https://wa.me/6282198924636" class="btn-outline-glow" target="_blank"><i class="fab fa-whatsapp"></i> Hubungi Saya</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat-card">
-            <h3 class="gradient-text">8</h3>
-            <span>Projek Dibuat</span>
-          </div>
-          <div class="stat-card">
-            <h3 class="gradient-text">2+</h3>
-            <span>Tahun Belajar</span>
-          </div>
-          <div class="stat-card">
-            <h3 class="gradient-text">100%</h3>
-            <span>Dedikasi</span>
-          </div>
-        </div>
-      </div>
-      <!-- Right -->
-      <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="900">
-        <div class="hero-img-wrap">
-          <div class="float-chip top">⚡ UI/UX Designer</div>
-          <div class="hero-glow-ring"></div>
-          <img src="assets/images/roys/Profile-roys.png" class="hero-img" alt="Roys Wanimbo">
-          <div class="float-chip bot">🚀 Frontend Developer</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- FOTO PROFIL -->
+<div class="orbit"></div>
 
-<!-- ============================================================
-     TECH STRIP
-     ============================================================ -->
-<section class="tech-strip">
-  <div class="container-xl">
-    <div class="row align-items-center g-4">
-      <div class="col-md-3 text-center text-md-start" data-aos="fade-right">
-        <div class="d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
-          <i class="fas fa-medal text-warning fs-2"></i>
-          <div>
-            <div class="fw-800 fs-5" style="color:var(--text);font-weight:900;">LEBIH DARI</div>
-            <div class="fw-900 fs-3 gradient-text">2 TAHUN</div>
-            <div style="color:var(--text-muted);font-size:.7rem;font-weight:700;letter-spacing:.1em;">PENGALAMAN</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-9">
-        <div class="d-flex flex-wrap justify-content-center justify-content-md-end gap-4" data-aos="fade-left">
-          <div class="tech-item"><i class="fab fa-html5" style="color:#e44d26;"></i><span>HTML</span></div>
-          <div class="tech-item"><i class="fab fa-css3-alt" style="color:#1572b6;"></i><span>CSS</span></div>
-          <div class="tech-item"><i class="fab fa-js" style="color:#f7df1e;"></i><span>JS</span></div>
-          <div class="tech-item"><i class="fas fa-wind" style="color:#38bdf8;"></i><span>TAILWIND</span></div>
-          <div class="tech-item"><i class="fab fa-bootstrap" style="color:#7952b3;"></i><span>BOOTSTRAP</span></div>
-          <div class="tech-item"><i class="fab fa-laravel" style="color:#ff2d20;"></i><span>LARAVEL</span></div>
-          <div class="tech-item"><i class="fab fa-wordpress" style="color:#21759b;"></i><span>WORDPRESS</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     PENGALAMAN / KOMUNITAS & SERTIFIKAT
-     ============================================================ -->
-<section class="exp-section py-5" id="pengalaman">
-  <div class="container-xl">
-    <div class="text-center mb-5" data-aos="fade-up">
-      <div class="section-label mb-3">KOMUNITAS &amp; SERTIFIKAT</div>
-      <h2 class="section-heading">Perjalanan Belajar Coding Saya</h2>
-      <p style="color:var(--text-muted);max-width:600px;margin:1rem auto;line-height:1.85;">
-        Saya terus belajar dan berkembang bersama komunitas coding Papua untuk membangun masa depan digital yang lebih baik.
-      </p>
-    </div>
-    <div class="row g-4">
-      <!-- Card 1 -->
-      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-        <div class="exp-card blue">
-          <div class="d-flex align-items-center gap-3 mb-4">
-            <div class="exp-logo">
-              <img src="https://sacode.web.id/images/logo-sacode-web-2025-light.png" alt="SaCode">
-            </div>
-            <div>
-              <h5 style="color:var(--text);font-weight:900;margin:0;">Belajar Coding di SaCode Papua</h5>
-              <span style="color:#60a5fa;font-size:.8rem;font-weight:700;">2+ Tahun Pengalaman Belajar</span>
-            </div>
-          </div>
-          <img src="assets/images/roys/Profile-roys.png" class="exp-img mb-4" alt="Roys Wanimbo di SaCode">
-          <p style="color:var(--text-muted);line-height:1.85;font-size:.92rem;">
-            Sejak tahun 2023 saya aktif belajar coding dan web development bersama komunitas SaCode Papua.
-            Saya mempelajari HTML, CSS, JavaScript, serta membangun berbagai project website modern dan mobile-friendly.
-          </p>
-          <div class="d-flex justify-content-between align-items-center mt-3 pt-3" style="border-top:1px solid var(--card-border);">
-            <div class="d-flex align-items-center gap-2">
-              <img src="https://sacode.web.id/images/logo-sacode-web-2025-light.png" alt="logo" width="22">
-              <span style="color:var(--text);font-weight:800;font-size:.85rem;">SaCode Papua</span>
-            </div>
-            <div class="text-end">
-              <div style="color:var(--text);font-weight:800;font-size:.85rem;">2023 – Sekarang</div>
-              <div style="color:#22c55e;font-size:.75rem;font-weight:700;">Masih Aktif Belajar</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-        <div class="exp-card cyan" style="--before-pos:bottom -80px left -80px;">
-          <div class="d-flex align-items-center gap-3 mb-4">
-            <div class="exp-logo">
-              <img src="https://sacode.web.id/images/logo-sacode-web-2025-light.png" alt="SaCode">
-            </div>
-            <div>
-              <h5 style="color:var(--text);font-weight:900;margin:0;">Sertifikat JavaScript SaCode</h5>
-              <span style="color:#22d3ee;font-size:.8rem;font-weight:700;">Bukti Hasil Belajar Coding</span>
-            </div>
-          </div>
-          <div class="cert-wrap mb-4">
-            <img src="assets/images/roys/Roys Wanimbo.png" class="exp-img" alt="Sertifikat Roys Wanimbo">
-            <div class="cert-overlay">
-              <a href="https://ancode-42078.web.app/assets/images/roys/Roys%20Wanimbo.png" target="_blank" class="btn-glow" rel="noopener">
-                <i class="fas fa-file-alt"></i> Lihat Sertifikat
-              </a>
-            </div>
-          </div>
-          <p style="color:var(--text-muted);line-height:1.85;font-size:.92rem;">
-            Saya berhasil mendapatkan sertifikat pembelajaran JavaScript dari komunitas SaCode Papua.
-            Pengalaman ini membuat saya semakin semangat untuk terus berkembang menjadi Frontend Developer profesional dari Papua.
-          </p>
-          <div class="d-flex justify-content-between align-items-center mt-3 pt-3" style="border-top:1px solid var(--card-border);">
-            <div class="d-flex align-items-center gap-2">
-              <img src="https://sacode.web.id/images/logo-sacode-web-2025-light.png" alt="logo" width="22">
-              <span style="color:var(--text);font-weight:800;font-size:.85rem;">Sertifikat SaCode</span>
-            </div>
-            <div class="text-end">
-              <div style="color:var(--text);font-weight:800;font-size:.85rem;">JavaScript</div>
-              <div style="color:#22c55e;font-size:.75rem;font-weight:700;">Completed</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     GALERI PROJEK
-     ============================================================ -->
-<section class="projects-section py-5" id="projek">
-  <div class="container-xl">
-    <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-5" data-aos="fade-up">
-      <div>
-        <div class="section-label mb-2">INILAH HASIL KARYA SAYA SELAMA INI</div>
-        <h2 class="section-heading">Galeri Projek</h2>
-        <p style="color:var(--text-muted);max-width:500px;margin-top:.5rem;">Beberapa projek web yang pernah saya buat. Klik kartu untuk membuka demo.</p>
-      </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="projectsGrid"></div>
-  </div>
-</section>
-
-<!-- ============================================================
-     RIWAYAT HIDUP (TABS)
-     ============================================================ -->
-<section class="timeline-section py-5" id="riwayat">
-  <div class="container-xl">
-    <div class="text-center mb-5" data-aos="fade-up">
-      <div class="section-label mb-3">LEBIH DARI 3 TAHUN PENGALAMAN</div>
-      <h2 class="section-heading">Riwayat Hidup</h2>
-    </div>
-
-    <!-- Tab buttons -->
-    <div class="d-flex justify-content-center mb-5" data-aos="fade-up" data-aos-delay="100">
-      <div class="rn-tabs">
-        <button class="rn-tab-btn active" data-tab="pendidikan">
-          <i class="fas fa-graduation-cap me-2"></i>Pendidikan
-        </button>
-        <button class="rn-tab-btn" data-tab="keahlian-prof">
-          <i class="fas fa-tools me-2"></i>Keahlian Profesional
-        </button>
-        <button class="rn-tab-btn" data-tab="pengalaman-kerja">
-          <i class="fas fa-briefcase me-2"></i>Pengalaman Kerja
-        </button>
-      </div>
-    </div>
-
-    <!-- PENDIDIKAN -->
-    <div class="rn-tab-pane active" id="tab-pendidikan">
-      <div class="col-md-9 mx-auto">
-        <div class="resume-date">2021 – 2025</div>
-        <h4 style="color:var(--text);font-weight:800;margin-bottom:1.5rem;">Riwayat Pendidikan</h4>
-
-        <div class="resume-item" data-aos="fade-up">
-          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
-            <div>
-              <h5 style="color:var(--text);font-weight:800;">Perjalanan Belajar Roys Wanimbo</h5>
-              <span style="color:var(--primary);font-size:.85rem;">Kampus UNINGRAT Papua &amp; Komunitas SaCode</span>
-            </div>
-            <span class="resume-date">2021 – 2025</span>
-          </div>
-          <p style="color:var(--text-muted);line-height:1.85;margin:0;">
-            Saya adalah Roys Wanimbo, seorang anak gunung yang sedang menempuh ilmu di bangku kuliah jurusan Informatika.
-            Fokus saya adalah menjadi seorang web programmer yang handal. Saat ini, saya juga aktif belajar bersama komunitas
-            <strong style="color:var(--primary);">SaCode</strong>, tempat yang luar biasa untuk berbagi dan bertumbuh.
-            Di sana, saya tidak hanya belajar coding, tapi juga membangun semangat untuk menciptakan solusi teknologi yang dibutuhkan masyarakat.
-            Saya percaya, belajar adalah jalan untuk memberi dampak positif bagi banyak orang.
-          </p>
-        </div>
-
-        <div class="resume-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
-            <div>
-              <h5 style="color:var(--text);font-weight:800;">Perjalanan Belajar Coding</h5>
-              <span style="color:var(--primary);font-size:.85rem;">Di Komunitas SaCode</span>
-            </div>
-            <span class="resume-date">2023 – 2025</span>
-          </div>
-          <p style="color:var(--text-muted);line-height:1.85;margin:0;">
-            Selama menempuh ilmu coding, saya berhasil membuat projek pertama untuk SMP Negeri 1 Pirime.
-            Dengan dukungan komunitas SaCode, saya terus mengembangkan kemampuan dan berkontribusi menciptakan solusi teknologi
-            yang bermanfaat bagi masyarakat. Projek ini menjadi langkah awal untuk mewujudkan visi saya dalam membangun
-            teknologi yang membantu kehidupan banyak orang.
-          </p>
-        </div>
-
-        <div class="resume-item" data-aos="fade-up" data-aos-delay="200">
-          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
-            <div>
-              <h5 style="color:var(--text);font-weight:800;">Pengembangan Website Promosi Produk</h5>
-              <span style="color:var(--primary);font-size:.85rem;">PYCH TOP.ID</span>
-            </div>
-            <span class="resume-date">2024</span>
-          </div>
-          <p style="color:var(--text-muted);line-height:1.85;margin:0;">
-            Saya membangun sebuah website di PYCH TOP.ID pada tahun 2024 dengan tujuan untuk mempromosikan berbagai produk
-            lokal yang ada di PYCH TOP.ID. Projek ini saya kerjakan sebagai bentuk kontribusi dalam mendukung perkembangan
-            UMKM dan ekonomi digital di Papua.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- KEAHLIAN PROFESIONAL (Progress) -->
-    <div class="rn-tab-pane" id="tab-keahlian-prof">
-      <div class="row g-5">
-        <div class="col-md-6" data-aos="fade-right">
-          <h4 style="color:var(--text);font-weight:800;margin-bottom:1.5rem;">
-            <i class="fas fa-paint-brush me-2" style="color:var(--primary);"></i>Design Skill
-          </h4>
-          <div class="mb-3"><div class="skill-label"><span>Canva</span><span class="pct">90%</span></div><div class="progress"><div class="progress-bar" data-width="90"></div></div></div>
-          <div class="mb-3"><div class="skill-label"><span>Photoshop</span><span class="pct">60%</span></div><div class="progress"><div class="progress-bar" data-width="60"></div></div></div>
-          <div class="mb-3"><div class="skill-label"><span>Whimsical</span><span class="pct">53%</span></div><div class="progress"><div class="progress-bar" data-width="53"></div></div></div>
-          <div class="mb-3"><div class="skill-label"><span>PicsArt Pro</span><span class="pct">95%</span></div><div class="progress"><div class="progress-bar" data-width="95"></div></div></div>
-          <div class="mb-3"><div class="skill-label"><span>Google Slides</span><span class="pct">70%</span></div><div class="progress"><div class="progress-bar" data-width="70"></div></div></div>
-        </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <h4 style="color:var(--text);font-weight:800;margin-bottom:1.5rem;">
-            <i class="fas fa-code me-2" style="color:var(--accent);"></i>Development Skill
-          </h4>
-          <div class="mb-3"><div class="skill-label"><span>Bootstrap</span><span class="pct">90%</span></div><div class="progress"><div class="progress-bar" data-width="90"></div></div></div>
-          <div class="mb-3"><div class="skill-label"><span>Tailwind CSS</span><span class="pct">50%</span></div><div class="progress"><div class="progress-bar" data-width="50"></div></div></div>
-          <div class="mb-3"><div class="skill-label"><span>JavaScript</span><span class="pct">40%</span></div><div class="progress"><div class="progress-bar" data-width="40"></div></div></div>
-          <div class="mb-3"><div class="skill-label"><span>Laravel Framework</span><span class="pct">20%</span></div><div class="progress"><div class="progress-bar" data-width="20"></div></div></div>
-          <div class="mb-3"><div class="skill-label"><span>CMS WordPress</span><span class="pct">60%</span></div><div class="progress"><div class="progress-bar" data-width="60"></div></div></div>
-          <div class="mb-3"><div class="skill-label"><span>LMS Moodle</span><span class="pct">20%</span></div><div class="progress"><div class="progress-bar" data-width="20"></div></div></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PENGALAMAN KERJA -->
-    <div class="rn-tab-pane" id="tab-pengalaman-kerja">
-      <div class="col-md-9 mx-auto">
-        <div class="resume-date">2025 – Sekarang</div>
-        <h4 style="color:var(--text);font-weight:800;margin-bottom:1.5rem;">Pengalaman Kerja</h4>
-
-        <div class="resume-item" data-aos="fade-up">
-          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
-            <div>
-              <h5 style="color:var(--text);font-weight:800;">Belum Memiliki Pengalaman Kerja Formal</h5>
-              <span style="color:var(--primary);font-size:.85rem;">Masih dalam proses belajar dan mengembangkan diri</span>
-            </div>
-            <span class="resume-date">2025 – Sekarang</span>
-          </div>
-          <p style="color:var(--text-muted);line-height:1.85;margin-bottom:.75rem;">
-            Saat ini saya belum memiliki pengalaman kerja formal di perusahaan, namun saya aktif mengembangkan keterampilan
-            di bidang web development dan teknologi informasi. Saya membuat berbagai proyek pribadi dan mengikuti kegiatan
-            komunitas seperti SaCode untuk meningkatkan kemampuan saya.
-          </p>
-          <a href="https://github.com/royswanimbo" target="_blank" style="color:var(--primary);font-weight:700;">
-            github.com/royswanimbo <i class="fas fa-arrow-up-right-from-square ms-1"></i>
-          </a>
-        </div>
-
-        <div class="resume-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
-            <div>
-              <h5 style="color:var(--text);font-weight:800;">Belajar Coding secara Mandiri</h5>
-              <span style="color:var(--primary);font-size:.85rem;">Komunitas SaCode – Papua</span>
-            </div>
-            <span class="resume-date">2018 – Sekarang</span>
-          </div>
-          <p style="color:var(--text-muted);line-height:1.85;margin-bottom:.75rem;">
-            Saya belajar coding secara mandiri, baik di rumah maupun di mana saja dan kapan saja. Melalui komunitas SaCode,
-            saya semakin termotivasi untuk terus mengasah kemampuan dan berinteraksi dengan sesama pelajar teknologi.
-            Proses belajar ini bukan hanya membentuk keterampilan teknis, tetapi juga karakter pantang menyerah dan semangat
-            untuk berkontribusi membangun Papua melalui teknologi.
-          </p>
-          <a href="https://github.com/royswanimbo" target="_blank" style="color:var(--primary);font-weight:700;">
-            royswanimbo <i class="fas fa-arrow-up-right-from-square ms-1"></i>
-          </a>
-        </div>
-
-        <div class="resume-item" data-aos="fade-up" data-aos-delay="200">
-          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
-            <div>
-              <h5 style="color:var(--text);font-weight:800;">Tutor Coding Dasar HTML &amp; CSS</h5>
-              <span style="color:var(--primary);font-size:.85rem;">LSM Pengembangan SDM &amp; Riset di Papua</span>
-            </div>
-            <span class="resume-date">2024</span>
-          </div>
-          <p style="color:var(--text-muted);line-height:1.85;margin:0;">
-            Berbagi ilmu tentang dasar-dasar coding HTML dan CSS kepada masyarakat Papua sebagai bentuk kontribusi nyata
-            dalam pengembangan SDM di bidang teknologi digital.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     KEAHLIAN (Skills Cards)
-     ============================================================ -->
-<section class="skills-section py-5" id="keahlian">
-  <div class="container-xl">
-    <div class="text-center mb-5" data-aos="fade-up">
-      <div class="section-label mb-3">MASTERY LEVEL</div>
-      <h2 class="section-heading">Keahlian Saya</h2>
-      <p style="color:var(--text-muted);max-width:550px;margin:1rem auto;">
-        Tools &amp; Tech Stack yang saya kuasai dengan pengalaman praktis dari projek nyata.
-      </p>
-    </div>
-    <!-- Skill Pills -->
-    <ul class="nav skill-pills justify-content-center mb-5 flex-wrap" id="skillTabs" role="tablist">
-      <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#skillDesign"><i class="fas fa-paint-brush me-2"></i>Design Skills</button></li>
-      <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#skillDev"><i class="fas fa-code me-2"></i>Development</button></li>
-    </ul>
-    <div class="tab-content">
-      <!-- Design -->
-      <div class="tab-pane fade show active" id="skillDesign">
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in"><div class="skill-card"><i class="fas fa-magic" style="color:#6366f1;"></i><h5 style="color:var(--text);font-weight:800;">Canva Mastery</h5><div class="progress mb-2"><div class="progress-bar" data-width="90"></div></div><span style="color:#6366f1;font-weight:700;">90%</span></div></div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="50"><div class="skill-card"><i class="fas fa-image" style="color:#ef4444;"></i><h5 style="color:var(--text);font-weight:800;">Photoshop</h5><div class="progress mb-2"><div class="progress-bar" style="background:linear-gradient(90deg,#ef4444,#f87171);" data-width="60"></div></div><span style="color:#ef4444;font-weight:700;">60%</span></div></div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100"><div class="skill-card"><i class="fas fa-brain" style="color:#f59e0b;"></i><h5 style="color:var(--text);font-weight:800;">Whimsical</h5><div class="progress mb-2"><div class="progress-bar" style="background:linear-gradient(90deg,#f59e0b,#fbbf24);" data-width="53"></div></div><span style="color:#f59e0b;font-weight:700;">53%</span></div></div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150"><div class="skill-card"><i class="fas fa-mobile-alt" style="color:#10b981;"></i><h5 style="color:var(--text);font-weight:800;">PicsArt Pro</h5><div class="progress mb-2"><div class="progress-bar" style="background:linear-gradient(90deg,#10b981,#34d399);" data-width="95"></div></div><span style="color:#10b981;font-weight:700;">95%</span></div></div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200"><div class="skill-card"><i class="fas fa-file-powerpoint" style="color:#3b82f6;"></i><h5 style="color:var(--text);font-weight:800;">Google Slides</h5><div class="progress mb-2"><div class="progress-bar" style="background:linear-gradient(90deg,#3b82f6,#60a5fa);" data-width="70"></div></div><span style="color:#3b82f6;font-weight:700;">70%</span></div></div>
-        </div>
-      </div>
-      <!-- Dev -->
-      <div class="tab-pane fade" id="skillDev">
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in"><div class="skill-card"><i class="fab fa-bootstrap" style="color:#7952b3;"></i><h5 style="color:var(--text);font-weight:800;">Bootstrap</h5><div class="progress mb-2"><div class="progress-bar" data-width="90"></div></div><span style="color:#7952b3;font-weight:700;">90%</span></div></div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="50"><div class="skill-card"><i class="fas fa-wind" style="color:#38bdf8;"></i><h5 style="color:var(--text);font-weight:800;">Tailwind CSS</h5><div class="progress mb-2"><div class="progress-bar" style="background:linear-gradient(90deg,#06b6d4,#22d3ee);" data-width="50"></div></div><span style="color:#38bdf8;font-weight:700;">50%</span></div></div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100"><div class="skill-card"><i class="fab fa-js-square" style="color:#f7df1e;"></i><h5 style="color:var(--text);font-weight:800;">JavaScript</h5><div class="progress mb-2"><div class="progress-bar" style="background:linear-gradient(90deg,#f59e0b,#fbbf24);" data-width="40"></div></div><span style="color:#f7df1e;font-weight:700;">40%</span></div></div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150"><div class="skill-card"><i class="fab fa-laravel" style="color:#ff2d20;"></i><h5 style="color:var(--text);font-weight:800;">Laravel</h5><div class="progress mb-2"><div class="progress-bar" style="background:linear-gradient(90deg,#ec4899,#f472b6);" data-width="20"></div></div><span style="color:#ff2d20;font-weight:700;">20%</span></div></div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200"><div class="skill-card"><i class="fab fa-wordpress" style="color:#21759b;"></i><h5 style="color:var(--text);font-weight:800;">WordPress CMS</h5><div class="progress mb-2"><div class="progress-bar" style="background:linear-gradient(90deg,#8b5cf6,#a78bfa);" data-width="60"></div></div><span style="color:#21759b;font-weight:700;">60%</span></div></div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="250"><div class="skill-card"><i class="fas fa-graduation-cap" style="color:#10b981;"></i><h5 style="color:var(--text);font-weight:800;">Moodle LMS</h5><div class="progress mb-2"><div class="progress-bar" style="background:linear-gradient(90deg,#10b981,#34d399);" data-width="20"></div></div><span style="color:#10b981;font-weight:700;">20%</span></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     ARTIKEL SAYA
-     ============================================================ -->
-<section class="artikel-section py-5" id="artikel">
-  <div class="container-xl">
-    <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-5" data-aos="fade-up">
-      <div>
-        <div class="section-label mb-2">SAYA SEDANG BELAJAR MENULIS ARTIKEL</div>
-        <h2 class="section-heading gradient-text">Artikel Saya</h2>
-      </div>
-      <a href="#" class="btn-outline-glow btn-sm"><i class="fas fa-chevron-right"></i> Lihat Semua</a>
-    </div>
-    <div class="row g-4">
-      <!-- Artikel 1 -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up">
-        <div class="art-card">
-          <div class="position-relative" style="overflow:hidden;">
-            <img src="assets/images/roys/arti.png" alt="Artikel Papua" onerror="this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=200&fit=crop'">
-            <span class="proj-badge position-absolute" style="top:12px;left:12px;">Personal Story</span>
-          </div>
-          <div class="p-4">
-            <h5 style="color:var(--text);font-weight:800;margin-bottom:.75rem;line-height:1.4;">DARI PEDALAMAN PIRIME, MENGEJAR MIMPI DI DUNIA IT</h5>
-            <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem;">Anak gunung dari SMPN1 Pirime yang kini semester 5 Informatika Uningrat Papua. Perjalanan dari warnet Wamena ke coding SaCode...</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <small style="color:var(--text-muted);">Baru • Roys Wanimbo</small>
-              <button class="btn-glow btn-sm" style="padding:.4rem 1rem;font-size:.8rem;" data-bs-toggle="modal" data-bs-target="#articleModal">
-                Baca <i class="fas fa-arrow-right ms-1"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Artikel 2 -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="art-card">
-          <div style="overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=200&fit=crop" alt="Coding">
-          </div>
-          <div class="p-4">
-            <span class="proj-badge mb-2 d-inline-block" style="background:linear-gradient(135deg,#22d3ee,#3b82f6);">Tech Development</span>
-            <h5 style="color:var(--text);font-weight:800;margin-bottom:.75rem;line-height:1.4;">Belajar HTML, CSS, JavaScript, Dan Laravel di SaCode</h5>
-            <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem;">Panduan pemula memulai perjalanan coding bersama komunitas SaCode Papua...</p>
-            <small style="color:var(--text-muted);">25 Apr 2025 • Roys Wanimbo</small>
-          </div>
-        </div>
-      </div>
-      <!-- Artikel 3 -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="art-card">
-          <div style="overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500&h=200&fit=crop" alt="SaCode">
-          </div>
-          <div class="p-4">
-            <span class="proj-badge mb-2 d-inline-block" style="background:linear-gradient(135deg,#22c55e,#10b981);">Komunitas</span>
-            <h5 style="color:var(--text);font-weight:800;margin-bottom:.75rem;line-height:1.4;">Mengapa SaCode Menjadi Tempat Belajar Terbaik Saya</h5>
-            <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem;">Pengalaman nyata belajar di komunitas SaCode Papua yang mengubah cara pandang saya...</p>
-            <small style="color:var(--text-muted);">10 Mar 2025 • Roys Wanimbo</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
-<footer>
-  <div class="container-xl">
-    <div class="row g-5">
-      <!-- About -->
-      <div class="col-lg-4 col-md-6">
-        <div class="d-flex align-items-center gap-2 mb-3">
-          <img src="assets/images/roys/Profile-roys.png" alt="R" width="36" height="36" style="border-radius:50%;object-fit:cover;">
-          <span style="color:var(--text);font-size:1.1rem;font-weight:900;">ROYS WANIMBO</span>
-        </div>
-        <p style="color:var(--text-muted);line-height:1.85;font-size:.88rem;">
-          Di sini, saya mencoba menceritakan tentang diri saya dari sudut pandang saya sendiri.
-          Saya, seorang anak gunung yang sedang mendalami dunia coding di komunitas SaCode.
-          Saya belajar agar bisa menciptakan solusi yang dibutuhkan oleh masyarakat.
-        </p>
-      </div>
-      <!-- Quick Link -->
-      <div class="col-lg-2 col-md-3 col-6">
-        <h6 style="color:var(--text);font-weight:800;margin-bottom:1rem;">Quick Link</h6>
-        <ul class="list-unstyled d-flex flex-column gap-2" style="font-size:.88rem;">
-          <li><a href="#beranda" style="color:var(--text-muted);transition:.2s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'"><i class="fas fa-chevron-right me-1" style="font-size:.65rem;"></i>Beranda</a></li>
-          <li><a href="#pengalaman" style="color:var(--text-muted);transition:.2s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'"><i class="fas fa-chevron-right me-1" style="font-size:.65rem;"></i>Pengalaman</a></li>
-          <li><a href="#projek" style="color:var(--text-muted);transition:.2s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'"><i class="fas fa-chevron-right me-1" style="font-size:.65rem;"></i>Projek</a></li>
-          <li><a href="#riwayat" style="color:var(--text-muted);transition:.2s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'"><i class="fas fa-chevron-right me-1" style="font-size:.65rem;"></i>Riwayat Hidup</a></li>
-          <li><a href="#artikel" style="color:var(--text-muted);transition:.2s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'"><i class="fas fa-chevron-right me-1" style="font-size:.65rem;"></i>Artikel Saya</a></li>
-        </ul>
-      </div>
-      <!-- Kontak -->
-      <div class="col-lg-3 col-md-3 col-6">
-        <h6 style="color:var(--text);font-weight:800;margin-bottom:1rem;">Kontak</h6>
-        <ul class="list-unstyled d-flex flex-column gap-2" style="color:var(--text-muted);font-size:.88rem;">
-          <li><i class="fas fa-map-marker-alt me-2" style="color:var(--primary);"></i>Papua, Indonesia</li>
-          <li><i class="fas fa-envelope me-2" style="color:var(--primary);"></i>royswanimbo@gmail.com</li>
-          <li><i class="fas fa-phone me-2" style="color:var(--primary);"></i>+62 821-9892-4636</li>
-          <li><i class="fab fa-whatsapp me-2" style="color:#25D366;"></i>
-            <a href="https://wa.me/6282198924636" target="_blank" style="color:var(--text-muted);">WhatsApp Me</a>
-          </li>
-        </ul>
-      </div>
-      <!-- Ikuti Saya -->
-      <div class="col-lg-3">
-        <h6 style="color:var(--text);font-weight:800;margin-bottom:1rem;">Ikuti Saya</h6>
-        <div class="footer-social d-flex gap-2 flex-wrap">
-          <a href="https://github.com/roysweb-coder" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/royswanimbo" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/ulla_chey/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.youtube.com/@%C5%A8lla_03" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.facebook.com/Ulla Sr./" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-        </div>
-        <p style="color:var(--text-muted);font-size:.75rem;margin-top:1.5rem;">
-          Domain: <span style="color:var(--primary);font-weight:700;">royswanimbo.web.id</span>
-        </p>
-      </div>
-    </div>
-    <hr style="border-color:var(--card-border);margin:2rem 0 1.5rem;">
-    <div class="text-center" style="color:var(--text-muted);font-size:.82rem;">
-      &copy; 2025 · Dibuat dengan <span style="color:#ef4444;">&hearts;</span> oleh <span class="gradient-text" style="font-weight:800;">Roys Wanimbo</span>
-    </div>
-  </div>
-</footer>
-
-<!-- Scroll to top -->
-<button id="scrollTop" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
-
-<!-- ============================================================
-     MODAL ARTIKEL LENGKAP
-     ============================================================ -->
-<div class="modal fade" id="articleModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header border-0">
-        <h5 class="modal-title gradient-text fw-bold">DARI PEDALAMAN PIRIME, MENGEJAR MIMPI DI DUNIA IT</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" style="filter:invert(1);"></button>
-      </div>
-      <div class="modal-body p-4" style="color:var(--text-muted);line-height:1.85;">
-        <p>Dulu, saat masih duduk di bangku Sekolah Dasar, cita-cita saya sangat sederhana: ingin menjadi seorang pilot. Saya membayangkan terbang tinggi menembus awan. Namun seiring waktu, Tuhan membawa saya ke jalur yang berbeda.</p>
-        <p>Saat memasuki SMP dan pertama kali melihat komputer dan laptop, hati saya langsung terpikat. Sejak hari itu, saya tahu — inilah dunia yang ingin saya pelajari, dunia yang ingin saya tekuni: <strong style="color:var(--primary);">dunia IT</strong>.</p>
-        <p>Saya masih sangat ingat saat kelas 2 di <strong style="color:var(--primary);">SMP Negeri 1 Pirime</strong>, ketika mata pelajaran TIK diajarkan oleh <strong style="color:var(--primary);">Bapak Gemius Wanimbo, Amd.Kom</strong>. Dari beliau, saya pertama kali mengenal internet. Pak guru bercerita bahwa anak-anak yang liburan ke Wamena bisa pergi ke warnet, mengetik alamat website seperti <span style="color:var(--accent);">www.lannyjaya.com</span> di Google. Cerita itu sederhana, tapi bagi saya saat itu — <em>sangat luar biasa</em>.</p>
-        <p>Karena kenyataannya, saya belum punya HP, apalagi laptop. Saya hanya bisa mendengar, membayangkan, dan menyimpan rasa penasaran yang begitu besar tentang dunia di balik layar komputer. <strong>Dari situlah mimpi kecil itu mulai tumbuh diam-diam di hati saya.</strong></p>
-        <p>Rasa penasaran itu terus saya bawa hingga lulus SMP dan melanjutkan sekolah di <strong style="color:var(--primary);">SMA YPPGY Wamena</strong>. Setelah lulus SMA, dengan segala keyakinan yang saya punya, saya memberanikan diri berangkat ke Jayapura — pertama kalinya jauh dari keluarga dan tanpa mengenal siapa pun.</p>
-        <p>Di kota besar ini, tantangan kembali datang. Banyak orang berkata bahwa kuliah IT di kampus swasta itu mahal. Namun jawaban saya hanya satu: <strong style="color:var(--primary);">"Soal biaya bisa dipikirkan belakangan, yang penting saya berada di jurusan yang saya impikan."</strong></p>
-        <p>Hari ini, di semester 5, saya bersyukur. Apa yang dulu hanya menjadi cerita dari Pak Guru Gemius Wanimbo, kini perlahan menjadi kenyataan. Saya sudah mampu membuat website dan mengelola link URL sendiri.</p>
-        <hr style="border-color:var(--card-border);">
-        <p><strong style="color:var(--text);">Terima Kasih Kepada:</strong><br>
-        ✅ <strong>Bapak Gemius Wanimbo, Amd.Kom</strong> atas inspirasi yang menyalakan mimpi saya.<br>
-        ✅ <strong>SMP Negeri 1 Pirime</strong>, sekolah di pedalaman dengan dedikasi luar biasa.<br>
-        ✅ <strong>Keluarga dan teman-teman</strong>, yang tidak pernah berhenti mendukung perjuangan saya.</p>
-        <p style="font-style:italic;color:var(--primary);">Dari tempat yang jauh di pedalaman, mimpi besar tetap bisa terwujud — asal kita berani melangkah, bertahan, dan tidak menyerah.</p>
-      </div>
-      <div class="modal-footer border-0">
-        <button class="btn-glow" data-bs-dismiss="modal">Tutup</button>
-      </div>
-    </div>
-  </div>
+<div class="profile-wrap">
+<div class="profile">
+<img src="assets/images/roys/Profile-roys.png" alt="Roys Wanimbo">
+</div>
 </div>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- AOS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<div class="core" onclick="boostLoad()">
+<i class="fas fa-microchip"></i>
+</div>
+
+<h1>HELLO 👏  ROYS WANIMBO</h1>
+<div class="sub">Interactive Smart System</div>
+
+<div class="progress-wrap">
+<div class="progress"></div>
+</div>
+
+<div class="row">
+<div class="percent" id="percent">0%</div>
+<div class="status" id="status">Menyiapkan Sistem...</div>
+</div>
+
+<div class="stats">
+<div class="card"><b id="cpu">12%</b>CPU</div>
+<div class="card"><b id="ram">34%</b>RAM</div>
+<div class="card"><b id="net">21ms</b>NETWORK</div>
+</div>
+
+</div>
 
 <script>
-/* ============================================================
-   INIT AOS
-   ============================================================ */
-AOS.init({ once: true, duration: 700, offset: 80 });
+let p = 0;
+let done = false;
 
-/* ============================================================
-   DARK / LIGHT THEME
-   ============================================================ */
-const html = document.documentElement;
-const themeToggle = document.getElementById('themeToggle');
-const themeToggleMobile = document.getElementById('themeToggleMobile');
-const themeIcon = document.getElementById('themeIcon');
-const themeIconMobile = document.getElementById('themeIconMobile');
+const percent = document.getElementById("percent");
+const statusText = document.getElementById("status");
+const cpu = document.getElementById("cpu");
+const ram = document.getElementById("ram");
+const net = document.getElementById("net");
 
-function setTheme(theme) {
-  html.setAttribute('data-theme', theme);
-  localStorage.setItem('theme', theme);
-  const isDark = theme === 'dark';
-  const iconClass = isDark ? 'fas fa-moon' : 'fas fa-sun';
-  if(themeIcon) themeIcon.className = iconClass;
-  if(themeIconMobile) themeIconMobile.className = iconClass;
-}
-
-const savedTheme = localStorage.getItem('theme') || 'dark';
-setTheme(savedTheme);
-
-function toggleTheme() {
-  const current = html.getAttribute('data-theme');
-  setTheme(current === 'dark' ? 'light' : 'dark');
-}
-if(themeToggle) themeToggle.addEventListener('click', toggleTheme);
-if(themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
-
-/* ============================================================
-   TYPING EFFECT
-   ============================================================ */
-const phrases = [
-  'Frontend Developer Modern.',
-  'Belajar Coding Bersama SaCode.',
-  'UI/UX Website Designer.',
-  'Mobile Friendly Web Creator.',
-  'Interactive Website Developer.'
-];
-let pIdx = 0, cIdx = 0, isDeleting = false;
-const typingEl = document.getElementById('typingEl');
-function typeLoop() {
-  if (!typingEl) return;
-  const current = phrases[pIdx];
-  if (isDeleting) {
-    cIdx--;
-    typingEl.textContent = current.slice(0, cIdx);
-    if (cIdx === 0) { isDeleting = false; pIdx = (pIdx + 1) % phrases.length; setTimeout(typeLoop, 500); return; }
-    setTimeout(typeLoop, 40);
-  } else {
-    cIdx++;
-    typingEl.textContent = current.slice(0, cIdx);
-    if (cIdx === current.length) { isDeleting = true; setTimeout(typeLoop, 2000); return; }
-    setTimeout(typeLoop, 80);
-  }
-}
-setTimeout(typeLoop, 400);
-
-/* ============================================================
-   SMOOTH SCROLL — navbar links
-   ============================================================ */
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', function(e) {
-    const href = this.getAttribute('href');
-    if (href === '#') return;
-    e.preventDefault();
-    const el = document.querySelector(href);
-    if (el) {
-      const top = el.getBoundingClientRect().top + window.scrollY - 72;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
-    // close mobile nav
-    const collapse = document.getElementById('navbarMenu');
-    if (collapse && collapse.classList.contains('show')) {
-      bootstrap.Collapse.getInstance(collapse)?.hide();
-    }
-  });
-});
-
-/* ============================================================
-   ACTIVE NAV ON SCROLL
-   ============================================================ */
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('#navbarMenu .nav-link');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 100) current = s.id;
-  });
-  navLinks.forEach(l => {
-    l.classList.remove('active');
-    if (l.getAttribute('href') === '#' + current) l.classList.add('active');
-  });
-});
-
-/* ============================================================
-   SCROLL TO TOP
-   ============================================================ */
-const scrollBtn = document.getElementById('scrollTop');
-window.addEventListener('scroll', () => {
-  scrollBtn.classList.toggle('visible', window.scrollY > 400);
-});
-scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-/* ============================================================
-   PROJECTS DATA
-   ============================================================ */
-const projects = [
-  {
-    title: 'Promosi Produk PYCH TOP.ID',
-    desc: 'Website promosi produk lokal untuk mendukung UMKM dan ekonomi digital Papua.',
-    img: 'assets/images/roys/1.png',
-    url: 'https://royswanimbo.github.io/pych-top-id-/',
-    tag: 'Web'
-  },
-  {
-    title: 'Saydi Kasus Personal Web',
-    desc: 'Personal website berisi ringkasan profil, projek, dan pembelajaran Roys Wanimbo.',
-    img: 'assets/images/roys/personalweb.png',
-    url: 'https://royswanimbo.github.io/royswanimbo-personal-website.id/',
-    tag: 'Portfolio'
-  },
-  {
-    title: 'SMP Negeri 1 Pirime',
-    desc: 'Website sekolah pertama yang saya bangun sebagai projek kontribusi nyata.',
-    img: 'assets/images/roys/3pirime.png',
-    url: 'https://smpn1pirime.io/',
-    tag: 'Sekolah'
-  },
-  {
-    title: 'ChatBot Roys',
-    desc: 'Aplikasi chatbot sederhana berbasis web yang interaktif dan responsif.',
-    img: 'assets/images/roys/froend.png',
-    url: 'https://ChatBot.io/',
-    tag: 'App'
-  },
-  {
-    title: 'PDKB',
-    desc: 'Platform digital untuk layanan komunitas berbasis web modern.',
-    img: 'assets/images/roys/ppdb.jpg',
-    url: 'https://pdkb.id',
-    tag: 'Platform'
-  },
-  {
-    title: 'Kedai Kopi Nogi Caffe',
-    desc: 'Website landing page modern untuk kedai kopi lokal Papua.',
-    img: 'assets/images/roys/kopi.jpg',
-    url: 'https://royswanimbo.github.io/website_caffenogi.id/',
-    tag: 'Bisnis'
-  },
-  {
-    title: 'Pantai Kopi',
-    desc: 'Website wisata pantai kopi dengan desain modern dan mobile friendly.',
-    img: 'assets/images/roys/s.jpg',
-    url: '#',
-    tag: 'Wisata'
-  },
-  {
-    title: 'Pemetaan Wilayah Waberkwa',
-    desc: 'Studi kasus pemetaan wilayah lokasi berbasis web interaktif.',
-    img: 'assets/images/roys/studi kasus pemetahan wilayah.png',
-    url: 'https://tugas-studikasus.web.app/',
-    tag: 'Maps'
-  }
+const msgs = [
+"Menyiapkan Sistem...",
+"Menyambungkan Jaringan...",
+"Memuat Interface...",
+"Mengaktifkan Security...",
+"Mengoptimalkan Data...",
+"Hampir Selesai..."
 ];
 
-function renderProjects() {
-  const grid = document.getElementById('projectsGrid');
-  if (!grid) return;
-  grid.innerHTML = projects.map((p, i) => `
-    <div class="col" data-aos="fade-up" data-aos-delay="${(i % 4) * 60}">
-      <div class="proj-card">
-        <div class="position-relative" style="overflow:hidden;height:180px;">
-          <img src="${p.img}" alt="${p.title}" loading="lazy"
-               style="width:100%;height:180px;object-fit:cover;"
-               onerror="this.src='https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=180&fit=crop'">
-          <span class="proj-badge position-absolute" style="top:10px;left:10px;">${p.tag}</span>
-        </div>
-        <div class="p-3">
-          <h6 style="color:var(--text);font-weight:800;margin-bottom:.5rem;">${p.title}</h6>
-          <p style="color:var(--text-muted);font-size:.8rem;line-height:1.65;margin-bottom:.75rem;">${p.desc}</p>
-          <a href="${p.url}" target="_blank" rel="noopener" class="btn-glow" style="padding:.45rem 1rem;font-size:.78rem;">
-            <i class="fas fa-external-link-alt"></i> Demo
-          </a>
-        </div>
-      </div>
-    </div>
-  `).join('');
-}
-renderProjects();
-
-/* ============================================================
-   RIWAYAT HIDUP TABS
-   ============================================================ */
-document.querySelectorAll('.rn-tab-btn').forEach(btn => {
-  btn.addEventListener('click', function() {
-    document.querySelectorAll('.rn-tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.rn-tab-pane').forEach(p => p.classList.remove('active'));
-    this.classList.add('active');
-    const target = document.getElementById('tab-' + this.dataset.tab);
-    if (target) {
-      target.classList.add('active');
-      animateProgressBars(target);
-    }
-  });
-});
-
-/* ============================================================
-   ANIMATE PROGRESS BARS
-   ============================================================ */
-function animateProgressBars(container) {
-  container.querySelectorAll('.progress-bar[data-width]').forEach(bar => {
-    bar.style.width = '0';
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        bar.style.width = bar.dataset.width + '%';
-      });
-    });
-  });
+function randomStats(){
+cpu.innerHTML = Math.floor(Math.random()*70+10)+"%";
+ram.innerHTML = Math.floor(Math.random()*60+20)+"%";
+net.innerHTML = Math.floor(Math.random()*40+10)+"ms";
 }
 
-// Animate on scroll
-const progressObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      animateProgressBars(e.target);
-      progressObserver.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.3 });
+function loop(){
+let timer = setInterval(()=>{
+p++;
+percent.innerHTML = p + "%";
+randomStats();
 
-document.querySelectorAll('.rn-tab-pane, .skills-section').forEach(el => progressObserver.observe(el));
-// Animate initial active tab immediately
-setTimeout(() => {
-  const active = document.querySelector('.rn-tab-pane.active');
-  if (active) animateProgressBars(active);
-}, 500);
+if(p<20) statusText.innerHTML = msgs[0];
+else if(p<40) statusText.innerHTML = msgs[1];
+else if(p<60) statusText.innerHTML = msgs[2];
+else if(p<80) statusText.innerHTML = msgs[3];
+else if(p<95) statusText.innerHTML = msgs[4];
+else statusText.innerHTML = msgs[5];
 
-/* ============================================================
-   NAVBAR SCROLL STYLE
-   ============================================================ */
-window.addEventListener('scroll', () => {
-  const nav = document.getElementById('navbar');
-  if (window.scrollY > 50) {
-    nav.style.boxShadow = '0 4px 30px rgba(0,0,0,0.25)';
-  } else {
-    nav.style.boxShadow = 'none';
-  }
-});
+if(p>=100){
+clearInterval(timer);
+finish();
+}
+},60);
+}
+
+function boostLoad(){
+if(p<85){
+p += 10;
+statusText.innerHTML = "Boost Mode Activated ⚡";
+}
+}
+
+function finish(){
+if(done) return;
+done = true;
+
+setTimeout(()=>{
+document.getElementById("loader").style.opacity="0";
+
+setTimeout(()=>{
+window.location.href="index1.html";
+},1000);
+
+},700);
+}
+
+loop();
 </script>
+
 </body>
 </html>
-
